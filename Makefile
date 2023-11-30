@@ -6,3 +6,5 @@ build:
 	clang -o main $(FILES) -lncurses
 run:
 	./main
+grind:
+	valgrind ./main
