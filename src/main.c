@@ -22,7 +22,6 @@ int main() {
         write_feed(&feeds[i], path);
         free(path);
     }
-    return 0;
 
     char* res_id = select_video(feeds, feed_ct);
     if(res_id == NULL) {
