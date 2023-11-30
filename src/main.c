@@ -6,8 +6,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-const char cache_dir[] = "/home/eck/.cache/ytrss";
-const char exec[] = "/home/eck/src/script/ytmpv.sh";
+const char cache_dir[] = "cache";
+const char exec[] = "ytmpv.sh";
+const char sources[] = "sources";
 
 int main() {
     int feed_ct = 0;

@@ -11,10 +11,10 @@
 
 typedef struct sockaddr sockaddr;
 
-Feed* fetch_feeds(int* feed_ct) {
+Feed* fetch_feeds(char* source_file, int* feed_ct) {
     const sockaddr* addr = (sockaddr*)form_addr("youtube.com");
     int channel_ct = 0;
-    char* src = read_file("sources");
+    char* src = read_file(source_file);
     char** channels = extract_ids(src, &channel_ct);
     Feed* res;
 
